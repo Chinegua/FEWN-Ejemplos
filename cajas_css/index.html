@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabla</title>
+        <script src="script.js"></script>  
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </HEAD>
+
+    <body>
+        <div id="box" class="box"></div>
+
+        <fieldset>    
+            <legend>Color:</legend>
+            <input name="color" type="color" value="#000000" id="color" onchange="update()"/>                   
+        </fieldset>
+
+        <fieldset>   
+            <legend>Width:</legend>
+            <input type="range" min="1" max="500" id="width" onchange="update()" value="50">                 
+        </fieldset>
+
+        <fieldset>   
+            <legend>Heigh:</legend>
+            <input type="range" min="1" max="500" id="heigh" onchange="update()" value="50">                 
+        </fieldset>
+
+        <fieldset>    
+            <legend>Border Color:</legend>
+            <input name="color" type="color" value="#000000" id="borderColor" onchange="update()"/>                   
+        </fieldset>
+        
+    </body>
+</html>
