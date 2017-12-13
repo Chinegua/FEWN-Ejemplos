@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <TITLE>Tabla</TITLE>
+    <script src="scriptFormulatio.js"></script>
+    <script src="radio.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</HEAD>
+
+<BODY>
+    <main>
+        <form>
+            <fieldset>
+
+                <legend>General:</legend>
+                <i class="fa fa-check-circle-o fa-3x" aria-hidden="true"></i>                
+                <input type="range" min="1" max="100" value="50" id="rangeGeneral" onchange="generalAction()">
+                <i class="fa fa-ban fa-3x" aria-hidden="true"></i>                
+                
+            </fieldset>
+
+            <input type="checkbox" id="radioAnclado" value="Car" checked> Anclado <br>
+
+            <fieldset>
+                
+                <legend>Riguroso:</legend>
+                <i class="fa fa-check-circle-o fa-3x" aria-hidden="true"></i>                
+                <input type="range" min="1" max="100" id="rangeRiguroso" onchange="mostrarConsola()" value="50">
+                <i class="fa fa-ban fa-3x" aria-hidden="true"></i>                
+                                
+            </fieldset>  
+            
+            <fieldset>
+                
+                <legend>Creativo:</legend>
+                <i class="fa fa-check-circle-o fa-3x" aria-hidden="true"></i>                
+                <input type="range" min="1" max="100" id="rangeCreativo" onchange="mostrarConsola()" value="50">
+                <i class="fa fa-ban fa-3x" aria-hidden="true"></i>                
+                                
+            </fieldset> 
+
+            <fieldset>
+                
+                <legend>Atractivo:</legend>
+                <i class="fa fa-check-circle-o fa-3x" aria-hidden="true"></i>                
+                <input type="range" min="1" max="100" id="rangeAtractivo" onchange="mostrarConsola()" value="50">
+                <i class="fa fa-ban fa-3x" aria-hidden="true"></i>                
+                                
+            </fieldset> 
+        </form>
+    </main>
+</BODY>
+
+</HTML>
