@@ -7,33 +7,53 @@ class Radio {
     }
 
     toString(){
-        console.log("General:"+general+"Atractivo:"+atractivo+"Creativo:"+creativo+"Atractivo:"+atractivo);
+        console.log("General:"+this.general+"Atractivo:"+this.atractivo+"Creativo:"+this.creativo+"Atractivo:"+this.atractivo);
     }
 
     setGeneral(value){
         this.general = value;
+        
+        if(document.getElementById("radioAnclado").checked == true){
+            document.getElementById("radioAnclado").checked = false;            
+            this.setRiguroso(value);          
+            this.setCreativo(value);
+            this.setAtractivo(value);
+            this.toString();
+            
+        }
     }
     setRiguroso(value){
+        console.log("hola");
         this.riguroso = value;
+        document.getElementById("rangeRiguroso").value = value;        
+        toString();
     }
     setCreativo(value){
         this.creativo = value;
+        document.getElementById("rangeCreativo").value = value;        
+        toString();
     }
     setAtractivo(value){
         this.atractivo = value;
+        document.getElementById("rangeAtractivo").value = value;         
+        toString();
     }
+
 
     getGeneral(value){
         return this.general;
     }
-    setRiguroso(value){
+    getRiguroso(value){
         return this.riguroso;
     }
-    setCreativo(value){
+    getCreativo(value){
         return this.creativo;
     }
-    setAtractivo(value){
+    getAtractivo(value){
         return this.atractivo;
     }
+
+
+
 
 }
