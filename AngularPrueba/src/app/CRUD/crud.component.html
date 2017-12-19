@@ -1,0 +1,21 @@
+<div>
+    <form [hidden]="hideElement">
+        First name:<br>
+        <input type="text" name="name" [(ngModel)]="user.name">
+        <br>
+        Email:<br>
+        <input type="text" name="email" [(ngModel)]="user.email">
+        <br><br>
+        <input type="submit" (click)="create()" value="Añadir usuario">
+    </form>
+</div>
+<ul *ngFor="let item of items">
+        <li>
+          <input type="string" name="name" [(ngModel)]="item.name" >
+          <input type="string"  name="email" [(ngModel)]="item.email">
+          <button (click)="removeItem(item)">Delete</button>
+          <button (click)="editItem(item)">Edit</button>
+        </li>
+</ul>
+<button (click)="hidden()">Ocultar saludo</button>
+<p *ngIf="showSelected">HOLA!</p>
